@@ -1,4 +1,4 @@
-<h1>Add new Post</h1>
+<div class="container"><h1>Add new Post</h1>
 
 <%= form_for :post, url:posts_path do |f| %>
 <p>
@@ -11,6 +11,7 @@
 <%= f.text_area :body %>
 </p>
 <p>
-<%= f.submit %>
+<%= f.submit ({ :class => 'btn btn-primary'})%>
 </p>
 <% end %>
+</div>
